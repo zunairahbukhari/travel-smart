@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Form</title>
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  
+  <div class="container" id="booking-container">
+   <a href="index.html"> <span style="background-color: #0B1959; color:azure; float:left; border-radius:1rem; height:2rem; width:3rem; line-height:2rem;">Back</span></a>
+    <h1>Book Your Package</h1>
+    <form id="appointment-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="name">
+      </div>
+      <div class="form-group">
+        <label for="Phone number">Phone Number:</label>
+        <input type="text" id="name" name="name" required placeholder="Phone number">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="email">
+      </div>
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required placeholder="date">
+      </div>
+      
+      <button type="submit" onclick="book()">Book Package</button>
+    </form>
+    <div id="message"></div>
+  </div>
+
+  <div id="popup" class="popup sticky">
+    <div class="popup-content">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  var popup = document.getElementById("popup");
+  var container = document.getElementById("booking-container");
+  var form = document.getElementById("appointment-form");
+  var formInputs = document.querySelectorAll("#appointment-form input");
+
+  // Function to pause animation
+  function pauseAnimation() {
+    container.classList.add("paused");
+    popup.classList.add("paused");
+  }
+
+  // Function to resume animation
+  function resumeAnimation() {
+    container.classList.remove("paused");
+    popup.classList.remove("paused");
+  }
+
+  // Event listener for mouse entering the container
+  container.addEventListener("mouseenter", function () {
+    pauseAnimation();
+  });
+
+  // Event listener for mouse leaving the container
+  container.addEventListener("mouseleave", function () {
+    resumeAnimation();
+  });
+
+  // Submit form event listener
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    // Pause animation while form is being submitted
+    pauseAnimation();
+    // Simulate form submission (replace with actual implementation)
+    setTimeout(function () {
+      // Show success message
+      var messageDiv = document.getElementById("message");
+      messageDiv.innerHTML = "Appointment booked successfully!";
+      messageDiv.style.color = "green";
+      // Clear form fields
+      form.reset();
+      // Resume animation after form submission is complete
+      resumeAnimation();
+    }, 1000); // Simulate server response time
+  });
+  // Pause animation when any form input is focused
+  formInputs.forEach(function (input) {
+    input.addEventListener("focus", pauseAnimation);
+    input.addEventListener("blur", resumeAnimation);
+  });
+});
+
+
+
+function book() {
+    const myTimeout = setTimeout(myGreeting, 3000);
+    window.location.href="index.html";    
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+        <!-- css file attach -->
+         <link rel="stylesheet" href="reviews.css">
+         <link rel="stylesheet" href="slider.css">
+        <!-- jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <!-- bootstrap cdn -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <!-- fontawesome cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+ <!-- HEADER OF WEBSITE -->
+ <header>
+  <div class="top-nav">
+      <div class="contact">
+          <p>0342-7463729</p>
+      </div>
+      <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();"
+  onmouseout="this.start();" width="60%">
+  Welcome to Travel Marts – Your gateway to unforgettable family adventures! &nbsp;&nbsp;&nbsp;&nbsp; Welcome to Travel Marts – Your gateway to unforgettable family adventures! 
+  &nbsp;&nbsp;&nbsp;&nbsp; Welcome to Travel Marts – Your gateway to unforgettable family adventures!  
+</marquee>
+      <div class="social-links">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+      </div>
+  </div>
+</header>
+<section id="nav">
+  <div class="logo">
+      <img src="Assets/logo-icon.png" alt="logo-icon">
+      <h1  data-aos="fade-right">TravelSmart</h1>
+  </div>
+  <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <!-- <a href="#">Trips</a> -->
+      <div class=" d-flex justify-content-center" style="margin-left: 40px; padding-bottom: 20px;" id="main1">
+          <div class="dropdown dropdown-hover">
+            <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init
+              class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              TRIP CATALOG
+            </button>
+            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="dropdownMenuButton" style=" background-color: #021959;">
+              <li>
+                  <a class="dropdown-item" href="#">Destination &raquo; </a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="tranportation.html">Transportation</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="accomodation.html">Accomodation</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Sort By Country &raquo; </a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="southamerica.html">South America</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="northamerica.html">North America</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="europe.html">Europe</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="asia.html">Asia</a>
+                    </li>
+                  </ul>
+                </li>
+              <li>
+                <a class="dropdown-item" href="#"> Sort By Activity &raquo; </a>
+                <ul class="dropdown-menu dropdown-submenu ">
+                  <li>
+                    <a class="dropdown-item" href="family-tour.html">Family tour</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="adventure.html">Adventure tour</a>
+                  </li>
+                 
+                  <li>
+                    <a class="dropdown-item" href="luxury.html">Luxury Tour</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cultural.html">Cultural tour</a>
+                  </li>
+                </ul>
+               
+              </li>
+              <li>
+              <a class="dropdown-item" href="book-form.html"> Book Now </a>
+          </li>
+            </ul>
+          </div>
+        </div>
+      <a href="contact.html">Contact Us</a>
+      <a href="reviews.html">Reviews</a>
+  </div>
+  <div class="search">
+      <section class="searchbar">
+          <div class="search-container">
+            <input type="search" id="searchInput" class="search-bar" placeholder=" Search ......." onkeyup="showSuggestions(this.value)">
+            <div id="suggestions"></div>
+            <div class="search-icon" id="searchIcon">
+              <i class="fas fa-search" style="color: white;"></i> 
+            </div>
+          </div>
+         
+        </section> 
+  </div>
+  <div class="hamburger">
+      <i class="fas fa-bars" onclick="clickHam()"></i>
+  </div>
+</section>
+<!-- NAV BAR FOR THE MOBILE APPLICATION -->
+<div class="mob-nav">
+   <a href="#">About</a>
+   <a href="#">Trips</a>
+   <a href="#">Contact Us</a>
+   <a href="#">Reviews</a>
+</div>
+    <section id="head">
+        <div class="container-fluid">
+            <h1>REVIEWS</h1>
+            
+            <div class="container">
+            <div class="top-head">
+            </div>  
+        </div>
+        </div>
+    </section>
+    <!-- cards slider -->
+    <section class="slider">
+        <div class="wrapper">
+            <div class="items">
+              <div class="item" tabindex="0">
+                <div class="review-card">
+                  <div class="header-content">
+                    <div class="img-area">
+                      <img alt="customer1" src="images/face-1.jpg">
+                    </div>
+                    <div class="info">
+                      <h4>Hammad</h4>
+                      
+                    </div>
+                  </div>
+                  <div class="single-review">
+                    <p>Absolutely loved my experience! The service was exceptional, and the atmosphere was perfect for a relaxing evening.</p>
+                  </div>
+                  <div class="review-footer">
+                    <div class="rating">
+                      <span class="active">★</span> 
+                      <span class="active">★</span> 
+                      <span class="active">★</span> 
+                      <span class="active">★</span> 
+                      <span class="">★</span>
+                    </div>
+                    <p>Reviewed on 01/01/2024</p>
+                  </div>
+                </div>
+                </div>
+    
+              </div>
+              <div class="items">
+                <div class="item" tabindex="0">
+                  <div class="review-card">
+                    <div class="header-content">
+                      <div class="img-area">
+                        <img alt="customer1" src="images/face-2.jpg">
+                      </div>
+                      <div class="info">
+                        <h4>Anas</h4>
+                        </div>
+                    </div>
+                    <div class="single-review">
+                      <p>This travel website made planning my trip a breeze! User-friendly interface and fantastic deals helped me create unforgettable memories.</p>
+                    </div>
+                    <div class="review-footer">
+                      <div class="rating">
+                        <span class="active">★</span> 
+                        <span class="active">★</span> 
+                        <span class="active">★</span> 
+                        <span class="active">★</span> 
+                        <span class="active">★</span>
+                      </div>
+                      <p>Reviewed on 21/04/2024</p>
+                    </div>
+                  </div>
+                  </div>
+      
+                </div>
+                <div class="items">
+                  <div class="item" tabindex="0">
+                    <div class="review-card">
+                      <div class="header-content">
+                        <div class="img-area">
+                          <img alt="customer1" src="images/face-3.jpg">
+                        </div>
+                        <div class="info">
+                          <h4>Ahsan</h4>
+                        
+                        </div>
+                      </div>
+                      <div class="single-review">
+                        <p>This travel website is a game-changer! Seamless navigation and incredible offers made booking my dream vacation effortless.</p>
+                      </div>
+                      <div class="review-footer">
+                        <div class="rating">
+                          <span class="active">★</span> 
+                          <span class="active">★</span> 
+                          <span class="active">★</span> 
+                          <span class="active">★</span> 
+                          <span class="active">★</span>
+                        </div>
+                        <p>Reviewed on 19/10/2024</p>
+                      </div>
+                    </div>
+                    </div>
+        
+                  </div>
+                    </div>
+                </div> 
+                
+                <div class="wrapper" style="margin-top: -15rem;">
+                    <div class="items">
+                      <div class="item" tabindex="0">
+                        <div class="review-card">
+                          <div class="header-content">
+                            <div class="img-area">
+                              <img alt="customer1" src="images/face-1.jpg">
+                            </div>
+                            <div class="info">
+                              <h4>Jhon</h4>
+                                
+                            </div>
+                          </div>
+                          <div class="single-review">
+                            <p>I had an amazing experience using this travel website! It was easy to navigate, and I found the best deals for my trip in no time.
+                          </p>
+                          </div>
+                          <div class="review-footer">
+                            <div class="rating">
+                              <span class="active">★</span> 
+                              <span class="active">★</span> 
+                              <span class="active">★</span> 
+                              <span class="active">★</span> 
+                              <span class="active">★</span>
+                            </div>
+                            <p>Reviewed on 08/08/2024</p>
+                          </div>
+                        </div>
+                        </div>
+            
+                      </div>
+                      <div class="items">
+                        <div class="item" tabindex="0">
+                          <div class="review-card">
+                            <div class="header-content">
+                              <div class="img-area">
+                                <img alt="customer1" src="images/face-2.jpg">
+                              </div>
+                              <div class="info">
+                                <h4>Alex</h4>
+                            
+                              </div>
+                            </div>
+                            <div class="single-review">
+                              <p>This travel website exceeded my expectations! It was intuitive to use and helped me find fantastic deals that made my trip unforgettable.</p>
+                            </div>
+                            <div class="review-footer">
+                              <div class="rating">
+                                <span class="active">★</span> 
+                                <span class="active">★</span> 
+                                <span class="active">★</span> 
+                                <span class="active">★</span> 
+                                <span class="">★</span>
+                              </div>
+                              <p>Reviewed on 11/02/2024</p>
+                            </div>
+                          </div>
+                          </div>
+              
+                        </div>
+                        <div class="items">
+                          <div class="item" tabindex="0">
+                            <div class="review-card">
+                              <div class="header-content">
+                                <div class="img-area">
+                                  <img alt="customer1" src="images/face-3.jpg">
+                                </div>
+                                <div class="info">
+                                  <h4>Rock</h4>
+                                 
+                                </div>
+                              </div>
+                              <div class="single-review">
+                                <p>This travel website made my trip planning a breeze! With great deals and a user-friendly interface, I found everything I needed in no time.
+
+
+
+                                </p>
+                              </div>
+                              <div class="review-footer">
+                                <div class="rating">
+                                  <span class="active">★</span> 
+                                  <span class="active">★</span> 
+                                  <span class="active">★</span> 
+                                  <span class="active">★</span> 
+                                  <span class="active">★</span>
+                                </div>
+                                <p>Reviewed on 05/04/2024</p>
+                              </div>
+                            </div>
+                            </div>
+                
+                          </div>
+                            </div>
+                        </div> 
+            </section>
+            
+
+    <section class="review container-fluid" style="margin-top: -7rem;">
+    <div class="container mt-5">
+        <h1 class="text-center h1" style="font-weight: 700;">Customer Reviews</h1>
+        <!-- Reviews Section -->
+        <div id="reviews" class="mt-4">
+            <!-- Existing reviews will be displayed here -->
+        </div>
+
+        <!-- Write a Review Section -->
+        
+        <div class="mt-5">
+            <form id="review-form" class="col-sm-12 col-12">
+            <h3 class="h3" style="font-style: oblique;">Write a Review</h3>
+           
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="review">Your Review</label>
+                    <textarea class="form-control" id="review" rows="3" placeholder="Write your review here..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="stars">Rating</label>
+                    <select class="form-control" id="stars">
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" id="review-btn">Submit Review</button>
+            </form>
+        </div>
+    </div>
+    <br><hr>
+
+     <!-- WEBSITE FOOTER -->
+     <section id="footer">
+      <div class="footer">
+          <div class="footer-cont">
+              <div class="footer-col1">
+                  <span id="footer-logo">
+                      <img src="Assets/logo-icon.png">
+                      <h1>TravelSmart</h1>
+                  </span>
+                  <p>Explore the world one destination at a time. Unforgettable journeys, crafted with love. Discover new cultures, breathtaking landscape. Travel with us, create memories forever.</p>
+                  <br>
+                  <div class="links">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-x-twitter"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                  </div>
+              </div>
+              <div class="footer-col2">
+                  <h2>BLOG POSTS</h2>
+                  <div class="footer-blog-details">
+                      <div class="footer-blog-img">
+                          <img src="Assets/offer2.png">
+                      </div>
+                      <div class="footer-blog-title">
+                          <h6>Create Your Memories With Us</h6>
+                          <p>Nov 2, 2022</p>
+                      </div>
+                  </div>
+                  <br>
+                  <div class="footer-blog-details">
+                      <div class="footer-blog-img">
+                          <img src="Assets/offer4.png">
+                      </div>
+                      <div class="footer-blog-title">
+                          <h6>Enjoy your life</h6>
+                          <p>Sep 12, 2024</p>
+                      </div>
+                  </div>
+                  <br>
+                  <div class="footer-blog-details">
+                      <div class="footer-blog-img">
+                          <img src="Assets/offer6.png">
+                      </div>
+                      <div class="footer-blog-title">
+                          <h6>Travel with us this year</h6>
+                          <p>Oct 25, 2023</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-col3">
+                  <h2>TAGS</h2>
+                  <div class="tags">
+                      <a href="#">Travel</a>
+                      <a href="#">Tour</a>
+                      <br>
+                      <a href="#">Enjoy</a>
+                      <a href="#">Adventure</a>
+                  </div>
+              </div>
+              <div class="footer-col4">
+                  <h2>CONTACT INFO</h2>
+                  <div class="contact-details">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <h3>Aptech, North Karachi</h3>
+                  </div>
+                  <div class="contact-details">
+                      <i class="fa-solid fa-phone"></i>
+                      <h3>+92 123 4567 890</h3>
+                  </div>
+                  <div class="contact-details">
+                      <i class="fa-regular fa-envelope"></i>
+                      <h3>travelsmart@gmail.com</h3>
+                  </div>
+                  <div class="contact-details">
+                      <i class="fa-solid fa-earth-americas"></i>
+                      <h3>www.travelsmart.com</h3>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-end">
+       <div class="footer-end-details">
+          <p>Copyright ©2024 All rights reserved <br>
+          Aptech Students Team Wizard</p>
+      </div>
+          <div class="footer-nav">
+              <a href="#">About</a>
+              <a href="#">Trips</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Reviews</a>
+          </div>
+      </div>
+  </section>
+
+    <script>
+        $(document).ready(function () {
+            // Function to handle the form submission
+            $('#review-form').on('submit', function (e) {
+                e.preventDefault();
+
+                // Get the values from the form
+                var name = $('#name').val();
+                var review = $('#review').val();
+                var stars = $('#stars').val();
+
+                // Add the review to the reviews section
+                var reviewHtml = `
+                    <div class="card review-card" id="review-show">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <img src="https://via.placeholder.com/50" alt="Profile Image" class="profile-img">
+                                <div>
+                                    <h5 class="card-title">${name}</h5>
+                                    <p class="card-text">${review}</p>
+                                    <div class="star-rating">${generateStars(stars)}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                $('#reviews').prepend(reviewHtml);
+
+                // Reset the form after submission
+                $('#review-form')[0].reset();
+            });
+
+            // Function to generate star rating HTML
+            function generateStars(stars) {
+                var starHtml = '';
+                for (var i = 0; i < stars; i++) {
+                    starHtml += '<i class="fas fa-star"></i>';
+                }
+                return starHtml;
+            }
+        });
+    </script>
+      <script type="text/javascript" src="script.js"></script>
+      <script>
+       AOS.init();
+     </script>
+</section>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For star icons -->
+</body>
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelSmart - Plan Your Trip</title>
+    <!-- CSS LINK -->
+     <link rel="stylesheet" href="style.css">
+    <!-- BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- ATTACHING FAVICORN OF A WEBSITE -->
+    <link rel="icon" type="image/x-icon" href="Assets/logo-icon.png">
+    <!-- AOS ANIMATION CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- HEADER OF WEBSITE -->
+     <header>
+        <div class="top-nav">
+            <div class="contact">
+                <p>0342-7463729</p>
+            </div>
+            <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();"
+        onmouseout="this.start();" width="60%">
+        Welcome to Travel Marts – Your gateway to unforgettable family adventures! &nbsp;&nbsp;&nbsp;&nbsp; Welcome to Travel Marts – Your gateway to unforgettable family adventures! 
+        &nbsp;&nbsp;&nbsp;&nbsp; Welcome to Travel Marts – Your gateway to unforgettable family adventures!  
+      </marquee>
+            <div class="social-links">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+     </header>
+     <section id="nav">
+        <div class="logo">
+            <img src="Assets/logo-icon.png" alt="logo-icon">
+            <h1  data-aos="fade-right">TravelSmart</h1>
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <!-- <a href="#">Trips</a> -->
+            <div class=" d-flex justify-content-center" style="margin-left: 40px; padding-bottom: 20px;" id="main1">
+                <div class="dropdown dropdown-hover">
+                  <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init
+                    class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-mdb-toggle="dropdown" aria-expanded="false">
+                    TRIP CATALOG
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="dropdownMenuButton" style=" background-color: #021959;">
+                    <li>
+                        <a class="dropdown-item" href="#">Destination &raquo; </a>
+                        <ul class="dropdown-menu dropdown-submenu">
+                          <li>
+                            <a class="dropdown-item" href="tranportation.html">Transportation</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="accomodation.html">Accomodation</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Sort By Country &raquo; </a>
+                        <ul class="dropdown-menu dropdown-submenu">
+                          <li>
+                            <a class="dropdown-item" href="southamerica.html">South America</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="northamerica.html">North America</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="europe.html">Europe</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="asia.html">Asia</a>
+                          </li>
+                        </ul>
+                      </li>
+                    <li>
+                      <a class="dropdown-item" href="#"> Sort By Activity &raquo; </a>
+                      <ul class="dropdown-menu dropdown-submenu ">
+                        <li>
+                          <a class="dropdown-item" href="family-tour.html">Family tour</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="adventure.html">Adventure tour</a>
+                        </li>
+                       
+                        <li>
+                          <a class="dropdown-item" href="luxury.html">Luxury Tour</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="cultural.html">Cultural tour</a>
+                        </li>
+                      </ul>
+                     
+                    </li>
+                    <li>
+                    <a class="dropdown-item" href="book-form.html"> Book Now </a>
+                </li>
+                  </ul>
+                </div>
+              </div>
+            <a href="contact.html">Contact Us</a>
+            <a href="reviews.html">Reviews</a>
+        </div>
+        <div class="search">
+            <section class="searchbar">
+                <div class="search-container">
+                  <input type="search" id="searchInput" class="search-bar" placeholder=" Search ......." onkeyup="showSuggestions(this.value)">
+                  <div id="suggestions"></div>
+                  <div class="search-icon" id="searchIcon">
+                    <i class="fas fa-search" style="color: white;"></i> 
+                  </div>
+                </div>
+               
+              </section> 
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars" onclick="clickHam()"></i>
+        </div>
+     </section>
+     <!-- NAV BAR FOR THE MOBILE APPLICATION -->
+     <div class="mob-nav">
+         <a href="#">About</a>
+         <a href="#">Trips</a>
+         <a href="#">Contact Us</a>
+         <a href="#">Reviews</a>
+     </div>
+     <!-- WEBSITE MAIN BODY -->
+     <section id="main-body">
+        <div class="body">
+            <div id="plane-img">
+            <img src="Assets/plane.png" alt="" class="plane" >
+        </div>
+            <h1  data-aos="zoom-in-down"data-aos-duration="1300">Discover</h1>
+            <h2  data-aos="zoom-in-down"data-aos-duration="1600">The World</h2>
+            <a href="family-tour.html">Explore Now</a>
+        </div>
+     </section>
+     <!-- TRIP CATEGORY -->
+      <section id="trip-category" >
+        <div class="trip-category" >
+            <span>
+                <a href="family-tour.html" id="activeBtn">Family Tour</a>
+            </span>
+            <span>
+                <a href="adventure.html">Adventure Tour</a>
+            </span>
+            <span>
+                <a href="luxury.html">Luxury Tour</a>
+            </span>
+            <span>
+                <a href="cultural.html">Cultural Tour</a>
+            </span>
+        </div>
+      </section>
+      <!-- TRIP CATEOGRY FOR RESPONSIVE -- MOBILE -->
+      <div class="mob-trip-category">
+          <div class="mob-category">
+              <a href="family-tour.html" id="activeBtn"><i class="fa-solid fa-bus"></i>&nbsp;&nbsp;&nbsp;&nbsp;Family Tour</a>
+              <a href="adventure.html"><i class="fa-solid fa-tree"></i>&nbsp;&nbsp;&nbsp;&nbsp;Adventure Tour</a>
+              <a href="luxury.html"><i class="fa-solid fa-gem"></i>&nbsp;&nbsp;&nbsp;&nbsp;Luxury Tour</a>
+              <a href="cultural.html"><i class="fa-solid fa-plane"></i>&nbsp;&nbsp;&nbsp;&nbsp;Cultural Tour</a>
+          </div>
+      </div>
+      <!-- TRIP SORTING FORM -->
+       <section id="trip-sorting">
+        <div class="trip-sorting">
+            <form action="">
+                <span>
+                  <label for="">Destination</label>
+                  <br>
+                  <input type="text" placeholder="Enter Your Destination" id="destination" required>
+                </span>
+                <span>
+                  <label for="">Check In</label>
+                  <br>
+                  <input type="date" id="checkin" required>
+                </span>
+                <span>
+                  <label for="">Check Out</label>
+                  <br>
+                  <input type="date" id="checkout" required>
+                </span>
+                <span>
+                  <label for="">Adults</label>
+                  <br>
+                  <input type="number" placeholder="Adults" id="adults" required>
+                </span>
+                <span>
+                  <label for="">Childrens</label>
+                  <br>
+                  <input type="number" placeholder="child" id="childreds" required>
+                </span>
+                <span>
+            <a href="accomodation.html">  <input  value="Search" id="trip-btn" type="submit" onclick="tripbtn()"></a>   
+           <!-- <a href="accomodation.html" id="trip-btn">Submit</a>   -->
+                </span>
+            </form>
+        </div>
+       </section>
+       <!-- TOURS SECTION -->
+       <section id="tours">
+           <div class="tours">
+             <div class="tours-title">
+               <h1 data-aos="fade-up">We have the best tours</h1>
+               <p data-aos="fade-up"data-aos-duration="1000">Discover unforgettable journeys with our expertly curated tours. Explore stunning destinations, enjoy unique experiences, and create lasting memories with us!</p>
+             </div>
+             <div class="tours-cont">
+                   <div class="tour-package1" data-aos="fade-up"data-aos-duration="1000">
+                       <h5>Sept 21st - Oct 21st</h5>
+                       <h1>Paris</h1>
+                       <p>From $2999</p>
+                       <div class="rating">
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-regular fa-star"></i>
+                       </div>
+                       <a href="family-tour.html">Explre Now</a>
+                   </div>
+                   <div class="tour-package2" data-aos="fade-up"data-aos-duration="1000">
+                       <h5>Sept 24st - Oct 1st</h5>
+                       <h1>Bali</h1>
+                       <p>From $1150</p>
+                       <div class="rating">
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                       </div>
+                       <a href="cultural.html">Explore Now</a>
+                   </div>
+                   <div class="tour-package3" data-aos="fade-up"data-aos-duration="1000">
+                       <h5>Sept 22st - Oct 22st</h5>
+                       <h1>New York</h1>
+                       <p>From $3159</p>
+                       <div class="rating">
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-regular fa-star"></i>
+                       </div>
+                       <a href="adventure.html">Explore Now</a>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-- PROMOTION PACKAGE -->
+       <section id="promotion-package" data-aos="zoom-in" data-aos-duration="1000">
+           <div class="promotion-package">
+               <div class="package">
+                   <h1>Maldives Premium Package</h1>
+                    <div class="rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Discover the ultimate Maldives experience with our exclusive deluxe packages, designed for luxury and relaxation. Enjoy pristine beaches, crystal-clear waters, and world-class accommodations tailored just for you.</p>
+                    <a href="luxury.html">Book Now</a>
+               </div>
+           </div>
+       </section>
+       <!-- OFFERS -->
+       <section id="offers">
+           <div class="offers">
+               <h1 data-aos="fade-up"data-aos-duration="1000">THE BEST OFFERS WITH ROOMS</h1>
+               <div class="offers-row">
+                   <div class="offer-details" data-aos="fade-right" data-aos-duration="1000">
+                       <div class="offer-img">
+                           <img src="Assets/offer1.png">
+                       </div>
+                       <div class="offer-txt">
+                           <h2>$450</h2>
+                           <p>per night</p>
+                           <div class="rating">
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                           </div>
+                           <h6>Features: Private beachfront<br>
+                           access, infinity pool, ocean views,<br>
+                           complimentary breakfast.</h6>
+                           <a href="accomodation.html">Read More</a>
+                       </div>
+                   </div>
+                   <div class="offer-details" data-aos="fade-left" data-aos-duration="1000">
+                       <div class="offer-img">
+                           <img src="Assets/offer2.png">
+                       </div>
+                       <div class="offer-txt">
+                           <h2>$380</h2>
+                           <p>per night</p>
+                           <div class="rating">
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-regular fa-star"></i>
+                           </div>
+                           <h6>Features: Luxury jungle villa,<br>
+                            private plunge pool, daily spa <br>
+                            treatments, and yoga sessions.</h6>
+                            <a href="accomodation.html">Read More</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="offers-row" id="distrub">
+                   <div class="offer-details" data-aos="fade-right" data-aos-duration="1000">
+                       <div class="offer-img">
+                           <img src="Assets/offer3.png">
+                       </div>
+                       <div class="offer-txt">
+                           <h2>$520</h2>
+                           <p>per night</p>
+                           <div class="rating">
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                           </div>
+                           <h6>Features: Panoramic caldera views,<br>
+                            outdoor jacuzzi, gourmet dining<br>
+                            experience.</h6>
+                            <a href="accomodation.html">Read More</a>
+                       </div>
+                   </div>
+                   <div class="offer-details" data-aos="fade-left" data-aos-duration="1000">
+                       <div class="offer-img">
+                           <img src="Assets/offer4.png">
+                       </div>
+                       <div class="offer-txt">
+                           <h2>$610</h2>
+                           <p>per night</p>
+                           <div class="rating">
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                           </div>
+                           <h6>Features: Balcony with Eiffel Tower<br>
+                            views, 5-star service, rooftop<br>
+                            bar access.</h6>
+                            <a href="accomodation.html">Read More</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="offers-row" id="distrub">
+                   <div class="offer-details" data-aos="fade-right" data-aos-duration="1000">
+                       <div class="offer-img">
+                           <img src="Assets/offer5.png">
+                       </div>
+                       <div class="offer-txt">
+                           <h2>$480</h2>
+                           <p>per night</p>
+                           <div class="rating">
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                           </div>
+                           <h6>Features: Marina views, private pool,<br>
+                            luxury shopping and dining nearby.</h6>
+                            <a href="accomodation.html">Read More</a>
+                       </div>
+                   </div>
+                   <div class="offer-details" data-aos="fade-left" data-aos-duration="1000">
+                       <div class="offer-img">
+                           <img src="Assets/offer6.png">
+                       </div>
+                       <div class="offer-txt">
+                           <h2>$700</h2>
+                           <p>per night</p>
+                           <div class="rating">
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-regular fa-star"></i>
+                           </div>
+                           <h6>Features: Ski-in/ski-out access,<br>
+                            mountain views, private sauna, and<br>
+                            gourmet dining.</h6>
+                            <a href="accomodation.html">Read More</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-- CLIENTS REVIEWS AND FEEDBACK -->
+       <section id="clients">
+           <div class="clients">
+               <h1  data-aos="fade-up"data-aos-duration="1000">WHAT OUR CLIENTS SAY ABOUT US</h1>
+               <div class="clients-reviews-cont">
+                   <div class="clients-reviews1" data-aos="fade-right" data-aos-duration="1000">
+                       <div class="client-info">
+                           <h2>John Matthews</h2>
+                           <p>August 25, 2024</p>
+                       </div>
+                       <div class="feedback">
+                           <h2>"Unforgettable Experience!"</h2>
+                           <p>"From the breathtaking views to the amazing hospitality, this trip exceeded all my expectations. A perfect getaway!"</p>
+                       </div>
+                   </div>
+                   <div class="clients-reviews2" data-aos="zoom-in" data-aos-duration="1000">
+                       <div class="client-info">
+                           <h2>Emily Johnson</h2>
+                           <p>July 19, 2024</p>
+                       </div>
+                       <div class="feedback">
+                           <h2>"A Dream Vacation!"</h2>
+                           <p>"Everything was flawless, from the accommodations to the activities. I couldn't have asked for a more relaxing holiday."</p>
+                       </div>
+                   </div>
+                   <div class="clients-reviews3" data-aos="fade-left" data-aos-duration="1000">
+                       <div class="client-info">
+                           <h2>Michael Harris</h2>
+                           <p>June 10, 2024</p>
+                       </div>
+                       <div class="feedback">
+                           <h2>"Paradise Found!"</h2>
+                           <p>"The resort was stunning, and the service was top-notch. I'll definitely be booking again next year!"</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <br><br><br>
+       <br><br>
+       <hr style="color: #000; height: 2px;">
+       <!-- TRANDING SECTION -->
+       <section id="trending">
+           <div class="trending">
+               <h2 data-aos="fade-up" data-aos-duration="1000">TRENDING NOW</h2>
+               <div class="trend-cont" data-aos="fade-up" data-aos-duration="1000">
+                   <div class="trend">
+                       <div class="trend-detail">
+                        <div class="trend-details-img">
+                            <img src="Assets/trend1.png">
+                        </div>
+                        <div class="trend-details-text">
+                            <h1>ROYAL PALACE HOTEL</h1>
+                            <h3>From $210</h3>
+                            <p>PARIS, FRANCE</p>
+                        </div>
+                       </div>
+                       <br>
+                       <div class="trend-detail">
+                        <div class="trend-details-img">
+                            <img src="Assets/trend2.png">
+                        </div>
+                        <div class="trend-details-text">
+                            <h1>OCEAN VIEW RESORT</h1>
+                            <h3>From $320</h3>
+                            <p>MALDIVES</p>
+                        </div>
+                       </div>
+                   </div>
+                   <div class="trend">
+                       <div class="trend-detail">
+                        <div class="trend-details-img">
+                            <img src="Assets/trend3.png">
+                        </div>
+                        <div class="trend-details-text">
+                            <h1>SUNSET BOUTIQUE HOTEL</h1>
+                            <h3>From $145</h3>
+                            <p>SANTORINI, GREECE</p>
+                        </div>
+                       </div>
+                       <br>
+                       <div class="trend-detail">
+                        <div class="trend-details-img">
+                            <img src="Assets/trend4.png">
+                        </div>
+                        <div class="trend-details-text">
+                            <h1>MOUNTAIN ESCAPE LODGE</h1>
+                            <h3>From $195</h3>
+                            <p>SWISS ALPS, SWITZERLAND</p>
+                        </div>
+                       </div>
+                   </div>
+                   <div class="trend">
+                       <div class="trend-detail">
+                        <div class="trend-details-img">
+                            <img src="Assets/trend5.png">
+                        </div>
+                        <div class="trend-details-text">
+                            <h1>URBAN LUXURY HOTELL</h1>
+                            <h3>From $160</h3>
+                            <p>NEW YORK, USA</p>
+                        </div>
+                       </div>
+                       <br>
+                       <div class="trend-detail">
+                        <div class="trend-details-img">
+                            <img src="Assets/trend6.png">
+                        </div>
+                        <div class="trend-details-text">
+                            <h1>SERENITY BEACH RESORT</h1>
+                            <h3>From $250</h3>
+                            <p>BALI, INDONESIA</p>
+                        </div>
+                       </div>
+                   </div>
+                   <div class="trend">
+                       <div class="trend-detail">
+                        <div class="trend-details-img">
+                            <img src="Assets/trend7.png">
+                        </div>
+                        <div class="trend-details-text">
+                            <h1>ROYAL PALACE HOTEL</h1>
+                            <h3>From $210</h3>
+                            <p>PARIS, FRANCE</p>
+                        </div>
+                       </div>
+                       <br>
+                       <div class="trend-detail">
+                        <div class="trend-details-img">
+                            <img src="Assets/trend8.png">
+                        </div>
+                        <div class="trend-details-text">
+                            <h1>HISTORIC CASTLE STAY</h1>
+                            <h3>From $280</h3>
+                            <p>EDINBURGH, SCOTLAND</p>
+                        </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <hr style="color: #000; height: 2px;">
+       <!-- WEBSITE FOOTER -->
+       <section id="footer">
+           <div class="footer">
+               <div class="footer-cont">
+                   <div class="footer-col1">
+                       <span id="footer-logo">
+                           <img src="Assets/logo-icon.png">
+                           <h1>TravelSmart</h1>
+                       </span>
+                       <p>Explore the world one destination at a time. Unforgettable journeys, crafted with love. Discover new cultures, breathtaking landscape. Travel with us, create memories forever.</p>
+                       <br>
+                       <div class="links">
+                          <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                          <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+                          <a href="https://twitter.com/login" target="_blank"> <i class="fa-brands fa-x-twitter"></i> </a>
+                          <a href="https://www.linkedin.com/login" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                       </div>
+                   </div>
+                   <div class="footer-col2">
+                       <h2>BLOG POSTS</h2>
+                       <div class="footer-blog-details">
+                           <div class="footer-blog-img">
+                               <img src="Assets/offer2.png">
+                           </div>
+                           <div class="footer-blog-title">
+                               <h6>Create Your Memories With Us</h6>
+                               <p>Nov 2, 2022</p>
+                           </div>
+                       </div>
+                       <br>
+                       <div class="footer-blog-details">
+                           <div class="footer-blog-img">
+                               <img src="Assets/offer4.png">
+                           </div>
+                           <div class="footer-blog-title">
+                               <h6>Enjoy your life</h6>
+                               <p>Sep 12, 2024</p>
+                           </div>
+                       </div>
+                       <br>
+                       <div class="footer-blog-details">
+                           <div class="footer-blog-img">
+                               <img src="Assets/offer6.png">
+                           </div>
+                           <div class="footer-blog-title">
+                               <h6>Travel with us this year</h6>
+                               <p>Oct 25, 2023</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="footer-col3">
+                       <h2>TAGS</h2>
+                       <div class="tags">
+                           <a href="tranportation.html">Travel</a>
+                           <a href="luxury.html">Tour</a>
+                           <br>
+                           <a href="family-tour.html">Enjoy</a>
+                           <a href="adventure.html">Adventure</a>
+                       </div>
+                   </div>
+                   <div class="footer-col4">
+                       <h2>CONTACT INFO</h2>
+                       <div class="contact-details">
+                    <a href="#"> <i class="fa-solid fa-location-dot"></i></a>
+                           <h3>Aptech, North Karachi</h3>
+                       </div>
+                       <div class="contact-details">
+                           <i class="fa-solid fa-phone"></i>
+                           <h3>0313-31313422</h3>
+                       </div>
+                       <div class="contact-details">
+                           <i class="fa-regular fa-envelope"></i>
+                           <h3>travelsmart@gmail.com</h3>
+                       </div>
+                       <div class="contact-details">
+                           <i class="fa-solid fa-earth-americas"></i>
+                           <h3>www.travelsmart.com</h3>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="footer-end">
+            <div class="footer-end-details">
+               <p>Copyright ©2024 All rights reserved <br>
+               Aptech Students Team Wizard</p>
+           </div>
+               <div class="footer-nav">
+                   <a href="about.html">About</a>
+                   <a href="family-tour.html">Trips</a>
+                   <a href="contact.html">Contact Us</a>
+                   <a href="reviews.html">Reviews</a>
+               </div>
+           </div>
+       </section>
+       <script type="text/javascript" src="script.js"></script>
+       <script>
+        AOS.init();
+     function tripbtn(){
+         window.location.href="accomodation.html";
+        }
+      </script>
+</body>
+</html>

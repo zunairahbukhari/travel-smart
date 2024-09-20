@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- divinectorweb.com -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Testimonial Cards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        background: #00b5dd;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 10% 0;
+    }
+    .review-card {
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    }
+    .img-area {
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 25px;
+    }
+    .img-area img {
+        width: 100%;
+    }
+    .header-content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .info h4 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .info p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        font-weight: 400;
+        color: #666;
+    }
+    .single-review p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.7;
+        color: #333;
+    }
+    .review-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #666;
+    }
+    .rating {
+        display: flex;
+    }
+    .rating span {
+        color: #000;
+        font-size: 18px;
+    }
+    .rating span.active {
+        color: #fbc02d;
+    }
+    @media screen and (max-width: 767px) {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        .review-card {
+            width: 85%;
+        }
+    }
+    
+
+</style>
+<body>
+    
+  <div class="wrapper">
+		<div class="review-card">
+			<div class="header-content">
+				<div class="img-area">
+          <img alt="customer1" src="img/1.jpg">
+        </div>
+				<div class="info">
+					<h4>John Doe</h4>
+					<p>Maketing Manager</p>
+				</div>
+			</div>
+			<div class="single-review">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor eveniet deleniti repellendus! Minima, dolorum.</p>
+			</div>
+			<div class="review-footer">
+				<div class="rating">
+					<span class="active">★</span> 
+          <span class="active">★</span> 
+          <span class="active">★</span> 
+          <span class="">★</span> 
+          <span class="">★</span>
+				</div>
+				<p>Reviewed on 01/01/2023</p>
+			</div>
+		</div>
+		<div class="review-card">
+			<div class="header-content">
+				<div class="img-area">
+          <img alt="customer1" src="img/2.jpg">
+        </div>
+				<div class="info">
+					<h4>Mark Wood</h4>
+					<p>Graphics Expert</p>
+				</div>
+			</div>
+			<div class="single-review">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor eveniet deleniti repellendus! Minima, dolorum.</p>
+			</div>
+			<div class="review-footer">
+				<div class="rating">
+					<span class="active">★</span> 
+          <span class="active">★</span> 
+          <span class="">★</span> 
+          <span class="">★</span> 
+          <span class="">★</span>
+				</div>
+				<p>Reviewed on 01/02/2023</p>
+			</div>
+		</div>
+		<div class="review-card">
+			<div class="header-content">
+				<div class="img-area">
+          <img alt="customer1" src="img/3.jpg">
+        </div>
+				<div class="info">
+					<h4>Jason Chedd</h4>
+					<p>Web Designer</p>
+				</div>
+			</div>
+			<div class="single-review">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor eveniet deleniti repellendus! Minima, dolorum.</p>
+			</div>
+			<div class="review-footer">
+				<div class="rating">
+					<span class="active">★</span> 
+          <span class="active">★</span> 
+          <span class="active">★</span> 
+          <span class="active">★</span> 
+          <span class="active">★</span>
+				</div>
+				<p>Reviewed on 01/03/2023</p>
+			</div>
+		</div>
+	</div>
+
+
+    
+</body>
+</html>
+
+

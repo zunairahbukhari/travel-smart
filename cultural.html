@@ -1,0 +1,431 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css file attach -->
+     <link rel="stylesheet" href="cultural.css">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+   <!-- HEADER OF WEBSITE -->
+   <header>
+    <div class="top-nav">
+        <div class="contact">
+            <p>0342-7463729</p>
+        </div>
+        <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();"
+    onmouseout="this.start();" width="60%">
+    Welcome to Travel Marts – Your gateway to unforgettable family adventures! &nbsp;&nbsp;&nbsp;&nbsp; Welcome to Travel Marts – Your gateway to unforgettable family adventures! 
+    &nbsp;&nbsp;&nbsp;&nbsp; Welcome to Travel Marts – Your gateway to unforgettable family adventures!  
+  </marquee>
+        <div class="social-links">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+ </header>
+ <section id="nav">
+    <div class="logo">
+        <img src="Assets/logo-icon.png" alt="logo-icon">
+        <h1  data-aos="fade-right">TravelSmart</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <!-- <a href="#">Trips</a> -->
+        <div class=" d-flex justify-content-center" style="margin-left: 40px; padding-bottom: 20px;" id="main1">
+            <div class="dropdown dropdown-hover">
+              <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init
+                class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-mdb-toggle="dropdown" aria-expanded="false">
+                TRIP CATALOG
+              </button>
+              <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="dropdownMenuButton" style=" background-color: #021959;">
+                <li>
+                    <a class="dropdown-item" href="#">Destination &raquo; </a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                      <li>
+                        <a class="dropdown-item" href="tranportation.html">Transportation</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="accomodation.html">Accomodation</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Sort By Country &raquo; </a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                      <li>
+                        <a class="dropdown-item" href="southamerica.html">South America</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="northamerica.html">North America</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="europe.html">Europe</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="asia.html">Asia</a>
+                      </li>
+                    </ul>
+                  </li>
+                <li>
+                  <a class="dropdown-item" href="#"> Sort By Activity &raquo; </a>
+                  <ul class="dropdown-menu dropdown-submenu ">
+                    <li>
+                      <a class="dropdown-item" href="family-tour.html">Family tour</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="adventure.html">Adventure tour</a>
+                    </li>
+                   
+                    <li>
+                      <a class="dropdown-item" href="luxury.html">Luxury Tour</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="cultural.html">Cultural tour</a>
+                    </li>
+                  </ul>
+                 
+                </li>
+                <li>
+                <a class="dropdown-item" href="book-form.html"> Book Now </a>
+            </li>
+              </ul>
+            </div>
+          </div>
+        <a href="contact.html">Contact Us</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <div class="search">
+        <section class="searchbar">
+            <div class="search-container">
+              <input type="search" id="searchInput" class="search-bar" placeholder=" Search ......." onkeyup="showSuggestions(this.value)">
+              <div id="suggestions"></div>
+              <div class="search-icon" id="searchIcon">
+                <i class="fas fa-search" style="color: white;"></i> 
+              </div>
+            </div>
+           
+          </section> 
+    </div>
+    <div class="hamburger">
+        <i class="fas fa-bars" onclick="clickHam()"></i>
+    </div>
+ </section>
+ <!-- NAV BAR FOR THE MOBILE APPLICATION -->
+ <div class="mob-nav">
+     <a href="#">About</a>
+     <a href="#">Trips</a>
+     <a href="#">Contact Us</a>
+     <a href="#">Reviews</a>
+ </div>
+  <section id="head">
+    <div class="container-fluid">
+        <h1>Cultural TOUR</h1>
+        
+        <div class="container">
+        <div class="top-head">
+     </div>  
+    </div>
+    </div>
+</section>
+    <section class="container">
+      <div class="row d-flex container-fluid m-auto" style="justify-content: space-evenly;" data-aos="fade-up" data-aos-duration="3000"> 
+        <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 my-3"
+          style="width: 30rem; box-shadow: rgba(110, 100, 111, 0.556) 0px 7px 29px 0px; background-color: rgba(242, 252, 255, 0.274);">
+          <img src="packages-images/delhi.jpg" class="card-img-top img-fluid my-2" alt="noimg" style="height: 20rem; width: 30rem;">
+          <h3 class="h3 text-center my-3" style="font-weight: 600;color: #4589D7;">New Delhi</h3>
+          <span class="ms-3 text-muted fs-6">11 Nov 2024 - 22 Nov 2024</span>
+          <span>
+            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+            <span class="ms-3 text-muted fs-6">City Tour In 3 Hours</span>
+          </span>
+          <span>
+            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+    
+            <span class="ms-3 text-muted fs-6"> Enjoy World Famous Restaurant</span>
+          </span>
+          <span>
+            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+            <span class="ms-3 text-muted fs-6">Wine Tester Trips</span>
+          </span>
+          <span>
+            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+            <span class="ms-3 text-muted fs-6">Night Street Life in Downtown</span>
+          </span>
+          <button class="btn w-25 m-auto mt-5 mb-4" id="book-btn"><a href="book-form.html" id="book-a" style="text-decoration: none;color: white;"><span>Book Now</span></a></button>
+        </div>
+        <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 my-3"
+        style="width: 30rem; box-shadow: rgba(110, 100, 111, 0.556) 0px 7px 29px 0px; background-color: rgba(242, 252, 255, 0.274);">
+        <img src="packages-images/colombia.jpg" class="card-img-top img-fluid my-2" alt="noimg" style="height: 20rem; width: 30rem;">
+        <h3 class="h3 text-center my-3" style="font-weight: 600;color: #4589D7;">Colombia</h3>
+        <span class="ms-3 text-muted fs-6">08 Aug 2024 - 16 Aug 2024</span>
+       <span>
+        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+        <span class="ms-3 text-muted fs-6">City Tour In 3 Hours</span>
+      </span>
+      <span>
+        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+
+        <span class="ms-3 text-muted fs-6"> Enjoy World Famous Restaurant</span>
+      </span>
+      <span>
+        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+        <span class="ms-3 text-muted fs-6">Wine Tester Trips</span>
+      </span>
+      <span>
+        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+        <span class="ms-3 text-muted fs-6">Night Street Life in Downtown</span>
+      </span>
+      <button class="btn w-25 m-auto mt-5 mb-4" id="book-btn"><a href="book-form.html" id="book-a" style="text-decoration: none;color: white;"><span>Book Now</span></a></button>
+      </div>
+       
+      </div>
+      <div class="row d-flex container-fluid m-auto" style="justify-content: space-evenly;" data-aos="fade-up" data-aos-duration="3000"> 
+        <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 my-3"
+          style="width: 30rem; box-shadow: rgba(110, 100, 111, 0.556) 0px 7px 29px 0px;background-color: rgba(242, 252, 255, 0.274);" >
+          <img src="packages-images/iceland.jpg" class="card-img-top img-fluid my-2" alt="noimg" style="height: 20rem; width: 30rem;">
+          <h3 class="h3 text-center my-3" style="font-weight: 600;color: #4589D7;">Ice Land</h3>
+          <span class="ms-3 text-muted fs-6">11 Nov 2024 - 22 Nov 2024</span>
+          <span>
+            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+            <span class="ms-3 text-muted fs-6">City Tour In 3 Hours</span>
+          </span>
+          <span>
+            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+    
+            <span class="ms-3 text-muted fs-6"> Enjoy World Famous Restaurant</span>
+          </span>
+          <span>
+            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+            <span class="ms-3 text-muted fs-6">Wine Tester Trips</span>
+          </span>
+          <span>
+            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+            <span class="ms-3 text-muted fs-6">Night Street Life in Downtown</span>
+          </span>
+          <button class="btn w-25 m-auto mt-5 mb-4" id="book-btn"><a href="book-form.html" id="book-a" style="text-decoration: none;color: white;"><span>Book Now</span></a></button>
+        </div>
+        <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 my-3"
+        style="width: 30rem; box-shadow: rgba(110, 100, 111, 0.556) 0px 7px 29px 0px;background-color: rgba(242, 252, 255, 0.274);">
+        <img src="packages-images/misir.jpg" class="card-img-top img-fluid my-2" alt="noimg" style="height: 20rem; width: 30rem;">
+        <h3 class="h3 text-center my-3" style="font-weight: 600;color: #4589D7;">Misir</h3>
+        <span class="ms-3 text-muted fs-6">08 Aug 2024 - 16 Aug 2024</span>
+       <span>
+        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+        <span class="ms-3 text-muted fs-6">City Tour In 3 Hours</span>
+      </span>
+      <span>
+        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+
+        <span class="ms-3 text-muted fs-6"> Enjoy World Famous Restaurant</span>
+      </span>
+      <span>
+        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+        <span class="ms-3 text-muted fs-6">Wine Tester Trips</span>
+      </span>
+      <span>
+        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+        <span class="ms-3 text-muted fs-6">Night Street Life in Downtown</span>
+      </span>
+      <button class="btn w-25 m-auto mt-5 mb-4" id="book-btn"><a href="book-form.html" id="book-a" style="text-decoration: none;color: white;"><span>Book Now</span></a></button>
+      </div>
+       
+      </div>
+      <div class="row d-flex container-fluid m-auto" style="justify-content: space-evenly;" data-aos="fade-up" data-aos-duration="3000"> 
+        <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 my-3"
+          style="width: 30rem; box-shadow: rgba(110, 100, 111, 0.556) 0px 7px 29px 0px;background-color: rgba(242, 252, 255, 0.274);">
+          <img src="packages-images/keystone.jpg" class="card-img-top img-fluid my-2" alt="noimg" style="height: 20rem; width: 30rem;">
+          <h3 class="h3 text-center my-3" style="font-weight: 600;color: #4589D7;">Key Stone</h3>
+          <span class="ms-3 text-muted fs-6">15 Dec 2024 - 22 Nov 2024</span>
+          <span>
+            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+            <span class="ms-3 text-muted fs-6">City Tour In 3 Hours</span>
+          </span>
+          <span>
+            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+    
+            <span class="ms-3 text-muted fs-6"> Enjoy World Famous Restaurant</span>
+          </span>
+          <span>
+            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+            <span class="ms-3 text-muted fs-6">Wine Tester Trips</span>
+          </span>
+          <span>
+            <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+            <span class="ms-3 text-muted fs-6">Night Street Life in Downtown</span>
+          </span>
+          <button class="btn w-25 m-auto mt-5 mb-4" id="book-btn"><a href="book-form.html" id="book-a" style="text-decoration: none;color: white;"><span>Book Now</span></a></button>
+        </div>
+        <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 my-3"
+        style="width: 30rem; box-shadow: rgba(110, 100, 111, 0.556) 0px 7px 29px 0px;background-color: rgba(242, 252, 255, 0.274);">
+        <img src="packages-images/florida-img.jpg" class="card-img-top img-fluid my-2" alt="noimg" style="height: 20rem; width: 30rem;">
+        <h3 class="h3 text-center my-3" style="font-weight: 600;color: #4589D7;">Florida</h3>
+        <span class="ms-3 text-muted fs-6">08 Aug 2024 - 16 Aug 2024</span>
+       <span>
+        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+        <span class="ms-3 text-muted fs-6">City Tour In 3 Hours</span>
+      </span>
+      <span>
+        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+
+        <span class="ms-3 text-muted fs-6"> Enjoy World Famous Restaurant</span>
+      </span>
+      <span>
+        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+        <span class="ms-3 text-muted fs-6">Wine Tester Trips</span>
+      </span>
+      <span>
+        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+        <span class="ms-3 text-muted fs-6">Night Street Life in Downtown</span>
+      </span>
+      <button class="btn w-25 m-auto mt-5 mb-4" id="book-btn"><a href="book-form.html" id="book-a" style="text-decoration: none;color: white;"><span>Book Now</span></a></button>
+      </div>
+       </div>
+      
+    </section>
+  <!-- fetch api section -->
+  <section class="fetch-api my-5">
+    <h1 class="h1 text-center my-5" style="color: #4589D7;font-family: serif; font-weight: 600; font-size: 4rem;">Package Table</h1>
+  <table class="table table-border w-75 table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Family Tour</th>
+        <th>Price</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody id="product-table" style="border: 1px solid black;">
+      <!-- Products will be inserted here  -->
+    </tbody>
+  </table>
+<!-- WEBSITE FOOTER -->
+<section id="footer">
+  <div class="footer">
+      <div class="footer-cont">
+          <div class="footer-col1">
+              <span id="footer-logo">
+                  <img src="Assets/logo-icon.png">
+                  <h1>TravelSmart</h1>
+              </span>
+              <p>Explore the world one destination at a time. Unforgettable journeys, crafted with love. Discover new cultures, breathtaking landscape. Travel with us, create memories forever.</p>
+              <br>
+              <div class="links">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+              </div>
+          </div>
+          <div class="footer-col2">
+              <h2>BLOG POSTS</h2>
+              <div class="footer-blog-details">
+                  <div class="footer-blog-img">
+                      <img src="Assets/offer2.png">
+                  </div>
+                  <div class="footer-blog-title">
+                      <h6>Create Your Memories With Us</h6>
+                      <p>Nov 2, 2022</p>
+                  </div>
+              </div>
+              <br>
+              <div class="footer-blog-details">
+                  <div class="footer-blog-img">
+                      <img src="Assets/offer4.png">
+                  </div>
+                  <div class="footer-blog-title">
+                      <h6>Enjoy your life</h6>
+                      <p>Sep 12, 2024</p>
+                  </div>
+              </div>
+              <br>
+              <div class="footer-blog-details">
+                  <div class="footer-blog-img">
+                      <img src="Assets/offer6.png">
+                  </div>
+                  <div class="footer-blog-title">
+                      <h6>Travel with us this year</h6>
+                      <p>Oct 25, 2023</p>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-col3">
+              <h2>TAGS</h2>
+              <div class="tags">
+                  <a href="#">Travel</a>
+                  <a href="#">Tour</a>
+                  <br>
+                  <a href="#">Enjoy</a>
+                  <a href="#">Adventure</a>
+              </div>
+          </div>
+          <div class="footer-col4">
+              <h2>CONTACT INFO</h2>
+              <div class="contact-details">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <h3>Aptech, North Karachi</h3>
+              </div>
+              <div class="contact-details">
+                  <i class="fa-solid fa-phone"></i>
+                  <h3>+92 123 4567 890</h3>
+              </div>
+              <div class="contact-details">
+                  <i class="fa-regular fa-envelope"></i>
+                  <h3>travelsmart@gmail.com</h3>
+              </div>
+              <div class="contact-details">
+                  <i class="fa-solid fa-earth-americas"></i>
+                  <h3>www.travelsmart.com</h3>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="footer-end">
+   <div class="footer-end-details">
+      <p>Copyright ©2024 All rights reserved <br>
+      Aptech Students Team Wizard</p>
+  </div>
+      <div class="footer-nav">
+          <a href="#">About</a>
+          <a href="#">Trips</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Reviews</a>
+      </div>
+  </div>
+</section>
+<script type="text/javascript" src="script.js"></script>
+<script>
+AOS.init();
+</script>
+  <script>
+    // Fetch data from the JSON file
+    fetch('package.json')
+      .then(response => response.json())
+      .then(products => {
+        const tableBody = document.getElementById('product-table');
+        products.forEach(product => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${product.id}</td>
+            <td>${product.name}</td>
+            <td>${product.price}</td>
+            <td>${product.description}</td>
+          `;
+          tableBody.appendChild(row);
+        });
+      })
+      .catch(error => console.error('Error fetching the JSON:', error));
+  </script>
+</section>
+</body>
+</html>

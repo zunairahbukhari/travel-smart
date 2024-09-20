@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="About.css">
+    <script src="About.js"></script>
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+    <!-- BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- ATTACHING FAVICORN OF A WEBSITE -->
+    <link rel="icon" type="image/x-icon" href="Assets/logo-icon.png">
+    <!-- AOS ANIMATION CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .banner {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 100px;
+            background-image: url('Images/boat.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 4em;
+        }
+
+        .banner button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .statistics {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .statistic {
+            text-align: center;
+            margin: 10px;
+            width: 200px;
+        }
+
+        .statistic i {
+            font-size: 3em;
+            color: #007bff;
+        }
+
+        .statistic h2 {
+            font-size: 2em;
+        }
+
+        .statistic p {
+            font-size: 1.2em;
+        }
+        .year {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .stat-item {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .stat-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        
+        .stat-number {
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #555;
+            margin: 0;
+        }
+
+        .percentage-label {
+            display: inline-block;
+            width: 60px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .progress {
+            height: 8px;
+            background-color: #e9ecef;
+        }
+
+        .progress-bar {
+            height: 8px;
+            transition: width 0.6s ease;
+        }
+
+        .bg-light-purple {
+            background-color: #DDA0DD;
+        }
+
+        .bg-orange {
+            background-color: #FF4500;
+        }
+
+        .bg-warning {
+            background-color: #FFAA00;
+        }
+
+        
+        #year{
+            margin-right: 150px;
+        }
+        #ye{
+            margin-left: 150px;
+        }
+        @media (max-width: 768px) {
+            .stat-item {
+                margin-bottom: 20px;
+            }
+
+            .progress-bars {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+     <!-- HEADER OF WEBSITE -->
+     <header>
+        <div class="top-nav">
+            <div class="contact">
+                <p>0342-7463729</p>
+            </div>
+            <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();"
+        onmouseout="this.start();" width="60%">
+        Welcome to Travel Marts – Your gateway to unforgettable family adventures! &nbsp;&nbsp;&nbsp;&nbsp; Welcome to Travel Marts – Your gateway to unforgettable family adventures! 
+        &nbsp;&nbsp;&nbsp;&nbsp; Welcome to Travel Marts – Your gateway to unforgettable family adventures!  
+      </marquee>
+            <div class="social-links">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+     </header>
+     <section id="nav">
+        <div class="logo">
+            <img src="Assets/logo-icon.png" alt="logo-icon">
+            <h1  data-aos="fade-right">TravelSmart</h1>
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <!-- <a href="#">Trips</a> -->
+            <div class=" d-flex justify-content-center" style="margin-left: 40px; padding-bottom: 20px;" id="main1">
+                <div class="dropdown dropdown-hover">
+                  <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init
+                    class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-mdb-toggle="dropdown" aria-expanded="false">
+                    TRIP CATALOG
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="dropdownMenuButton" style=" background-color: #021959;">
+                    <li>
+                        <a class="dropdown-item" href="#">Destination &raquo; </a>
+                        <ul class="dropdown-menu dropdown-submenu">
+                          <li>
+                            <a class="dropdown-item" href="tranportation.html">Transportation</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="accomodation.html">Accomodation</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Sort By Country &raquo; </a>
+                        <ul class="dropdown-menu dropdown-submenu">
+                          <li>
+                            <a class="dropdown-item" href="southamerica.html">South America</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="northamerica.html">North America</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="europe.html">Europe</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="asia.html">Asia</a>
+                          </li>
+                        </ul>
+                      </li>
+                    <li>
+                      <a class="dropdown-item" href="#"> Sort By Activity &raquo; </a>
+                      <ul class="dropdown-menu dropdown-submenu ">
+                        <li>
+                          <a class="dropdown-item" href="family-tour.html">Family tour</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="adventure.html">Adventure tour</a>
+                        </li>
+                       
+                        <li>
+                          <a class="dropdown-item" href="luxury.html">Luxury Tour</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="cultural.html">Cultural tour</a>
+                        </li>
+                      </ul>
+                     
+                    </li>
+                    <li>
+                    <a class="dropdown-item" href="book-form.html"> Book Now </a>
+                </li>
+                  </ul>
+                </div>
+              </div>
+            <a href="contact.html">Contact Us</a>
+            <a href="reviews.html">Reviews</a>
+        </div>
+        <div class="search">
+            <section class="searchbar">
+                <div class="search-container">
+                  <input type="search" id="searchInput" class="search-bar" placeholder=" Search ......." onkeyup="showSuggestions(this.value)">
+                  <div id="suggestions"></div>
+                  <div class="search-icon" id="searchIcon">
+                    <i class="fas fa-search" style="color: white;"></i> 
+                  </div>
+                </div>
+               
+              </section> 
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars" onclick="clickHam()"></i>
+        </div>
+     </section>
+     <!-- NAV BAR FOR THE MOBILE APPLICATION -->
+     <div class="mob-nav">
+         <a href="#">About</a>
+         <a href="#">Trips</a>
+         <a href="#">Contact Us</a>
+         <a href="#">Reviews</a>
+     </div>
+     <!-- WEBSITE MAIN BODY -->
+     <section id="main-body">
+        <div class="body">
+            <div id="plane-img">
+            <img src="Assets/plane.png" alt="" class="plane" >
+        </div>
+            <!-- <h1  data-aos="zoom-in-down"data-aos-duration="1300">Discover</h1>
+            <h2  data-aos="zoom-in-down"data-aos-duration="1600">The World</h2>
+            <a href="family-tour.html">Explore Now</a> -->
+            <h1 style="font-size: 80px; margin-top: 70px;">About Us</h1>
+        </div>
+     </section>
+    <!-- About Us -->
+    <section class="background">
+
+      <br><br>
+        <div style="margin-top: -100px;">
+            <div class="container">
+                <div class="image">
+                    <img src="Images/intro.png" alt="Description of Image">
+                </div><br>
+                <div class="content">
+                    <h1 class="bebas-neue-regular ">We have the best tours</h1> <br><br>
+                    <p class="bebas-neue-regular" style="color: grey;">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Vivamus quis vulputate eros, iaculis
+                        consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec
+                        bibendum
+                        tristique condimentum. Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum
+                        aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam
+                        tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend
+                        dui
+                        nunc, non fermentum quam placerat non. Etiam venenatis nibh augue, sed eleifend justo tristique
+                        eu
+                    </p><br>
+                   <a href="accomodation.html"> <button type="button" class="btn btn-primary" id="Btnt">Explore Now</button> </a>
+                </div>
+            </div><br><br><br><br>
+        </div>
+        
+        
+        
+        <div class="containerp text-center my-5">
+            <h2 class="fw-bold">Yearly Statistics</h2>
+            <p class="text-center" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Integer elementum orci <br> eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula.</p>
+            
+            <div class="row align-items-center my-5">
+                <!-- Left Column (2016 Stats) -->
+                <div class="col-md-4">
+                    <h5 class="year text-warning text-start" id="ye">2016</h5><br>
+                    <div class="stat-item d-flex align-items-center mb-4 justify-content-center">
+                        <i class="fa-solid fa-umbrella-beach" style="color: #da680b; font-size: 30px; margin-right: 18px; margin-bottom: 10px;"></i>
+                        <div class="stat-info">
+                            <div class="stat-number">1,642</div>
+                            <p class="stat-label">Clients</p>
+                        </div>
+                    </div>
+                    <div class="stat-item d-flex align-items-center mb-4 justify-content-center">
+                        <i class="fa-solid fa-dolly" style="color: #da680b; font-size: 30px; margin-right: 22px;  margin-bottom: 10px;"></i>
+                        <div class="stat-info">
+                            <div class="stat-number">768</div>
+                            <p class="stat-label">Returns</p>
+                        </div>
+                    </div>
+                    <div class="stat-item d-flex align-items-center mb-4 justify-content-center">
+                        <i class="fa-solid fa-truck-fast" style="color: #da680b; font-size: 30px; margin-left: 10px;  margin-bottom: 10px;"></i>
+                        <div class="stat-info">
+                            <div class="stat-number" style="margin-left: 14px;">11,546</div>
+                            <p class="stat-label" style="margin-left: 15px;">Reach</p>
+                        </div>
+                    </div>
+                    <div class="stat-item d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-clock" style="color: #da680b; font-size: 30px; margin-right: 12px;  margin-bottom: 10px;"></i>
+                        <div class="stat-info">
+                            <div class="stat-number">3,729</div>
+                            <p class="stat-label">Items</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Center Column (Bars and Percentages) -->
+                <div class="col-md-4">
+                    <div class="progress-bars text-start">
+                        <div class="stat-bar mb-4">
+                            <span class="percentage-label">+115%</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 115%;" aria-valuenow="115" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="stat-bar mb-4">
+                            <span class="percentage-label">-81%</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-light-purple" role="progressbar" style="width: 19%;" aria-valuenow="19" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="stat-bar mb-4">
+                            <span class="percentage-label">-19%</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-orange" role="progressbar" style="width: 81%;" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="stat-bar mb-4">
+                            <span class="percentage-label">+367%</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 367%;" aria-valuenow="367" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Right Column (2017 Stats) -->
+                <div class="col-md-4">
+                    <h5 class="year text-warning text-end" id="year">2017</h5><br>
+                    <div class="stat-item d-flex align-items-center mb-4 justify-content-center">
+                        <div class="stat-info">
+                            <div class="stat-number">3,527</div>
+                            <p class="stat-label" style="margin-left: 8px ;">Clients</p>
+                        </div>
+                        <i class="fa-solid fa-umbrella-beach" style="color: #da680b; font-size: 30px; margin-left: 18px; margin-bottom: 10px;"></i>
+                    </div>
+                    <div class="stat-item d-flex align-items-center mb-4 justify-content-center">
+                        <div class="stat-info">
+                            <div class="stat-number" style="margin-left: 15px ;">145</div>
+                            <p class="stat-label">Returns</p>
+                        </div>
+                        <i class="fa-solid fa-dolly" style="color: #da680b; font-size: 30px; margin-left: 15px;  margin-bottom: 10px;"></i>
+                    </div>
+                    <div class="stat-item d-flex align-items-center mb-4 justify-content-center">
+                        <div class="stat-info">
+                            <div class="stat-number">17,429</div>
+                            <p class="stat-label"style="margin-left: 23px ;" >Reach</p>
+                        </div>
+                        <i class="fa-solid fa-truck-fast" style="color: #da680b; font-size: 30px; margin-left: 10px;  margin-bottom: 10px;"></i>
+                    </div>
+                    <div class="stat-item d-flex align-items-center justify-content-center">
+                        <div class="stat-info">
+                            <div class="stat-number">9,321</div>
+                            <p class="stat-label" style="margin-left:20px;">Items</p>
+                        </div>
+                        <i class="fa-solid fa-clock" style="color: #da680b; font-size: 30px; margin-left: 12px;  margin-bottom: 10px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="banner">
+            <h1 style="margin-right: 750px;">THAILAND</h1>
+            <p style="margin-right: 750px; font-size: 20px; margin-top: 10px;">From $999</p>
+            <button style="margin-right: 750px; ">EXPLORE NOW</button>
+        </div>
+        <div class="container">
+            <div class="statistics"  style="margin-left: 100px ;">
+                <div class="statistic">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h2>255</h2>
+                    <p>Clients</p>
+                </div>
+                <div class="statistic" style="margin-left: 35px ;">
+                    <i class="fas fa-fish"></i>
+                    <h2>1176</h2>
+                    <p>Projects</p>
+                </div>
+                <div class="statistic" style="margin-left: 30px ;">
+                    <i class="fas fa-globe-americas"></i>
+                    <h2>39</h2>
+                    <p>Countries</p>
+                </div>
+                <div class="statistic" style="margin-left: 10px ;">
+                    <i class="fas fa-suitcase"></i>
+                    <h2>127</h2>
+                    <p>Coffees</p>
+                </div>
+            </div>
+        </div>
+       
+
+
+       
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ae83b2364d.js" crossorigin="anonymous"></script>
+     <!-- WEBSITE FOOTER -->
+      <hr>
+     <section id="footer">
+        <div class="footer">
+            <div class="footer-cont">
+                <div class="footer-col1">
+                    <span id="footer-logo">
+                        <img src="Assets/logo-icon.png">
+                        <h1>TravelSmart</h1>
+                    </span>
+                    <p>Explore the world one destination at a time. Unforgettable journeys, crafted with love. Discover new cultures, breathtaking landscape. Travel with us, create memories forever.</p>
+                    <br>
+                    <div class="links">
+                       <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                       <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+                       <a href="https://twitter.com/login" target="_blank"> <i class="fa-brands fa-x-twitter"></i> </a>
+                       <a href="https://www.linkedin.com/login" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <h2>BLOG POSTS</h2>
+                    <div class="footer-blog-details">
+                        <div class="footer-blog-img">
+                            <img src="Assets/offer2.png">
+                        </div>
+                        <div class="footer-blog-title">
+                            <h6>Create Your Memories With Us</h6>
+                            <p>Nov 2, 2022</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="footer-blog-details">
+                        <div class="footer-blog-img">
+                            <img src="Assets/offer4.png">
+                        </div>
+                        <div class="footer-blog-title">
+                            <h6>Enjoy your life</h6>
+                            <p>Sep 12, 2024</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="footer-blog-details">
+                        <div class="footer-blog-img">
+                            <img src="Assets/offer6.png">
+                        </div>
+                        <div class="footer-blog-title">
+                            <h6>Travel with us this year</h6>
+                            <p>Oct 25, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col3">
+                    <h2>TAGS</h2>
+                    <div class="tags">
+                        <a href="tranportation.html">Travel</a>
+                        <a href="luxury.html">Tour</a>
+                        <br>
+                        <a href="family-tour.html">Enjoy</a>
+                        <a href="adventure.html">Adventure</a>
+                    </div>
+                </div>
+                <div class="footer-col4">
+                    <h2>CONTACT INFO</h2>
+                    <div class="contact-details">
+                 <a href="#"> <i class="fa-solid fa-location-dot"></i></a>
+                        <h3>Aptech, North Karachi</h3>
+                    </div>
+                    <div class="contact-details">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>0313-31313422</h3>
+                    </div>
+                    <div class="contact-details">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h3>travelsmart@gmail.com</h3>
+                    </div>
+                    <div class="contact-details">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <h3>www.travelsmart.com</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+         <div class="footer-end-details">
+            <p>Copyright ©2024 All rights reserved <br>
+            Aptech Students Team Wizard</p>
+        </div>
+            <div class="footer-nav">
+                <a href="about.html">About</a>
+                <a href="family-tour.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="reviews.html">Reviews</a>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+     AOS.init();
+    // function tripbtn(){
+      // window.location.href="accomodation.html";
+    // }
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "name": "Premium Family Tour",
+      "price": 50000,
+      "description": "Experience luxury with our Premium Family Tour,<br> featuring 5-star accommodations, private guided <br> tours,  and exclusive activities designed for all ages."
+    },
+    {
+      "id": 2,
+      "name": "Standard Family Tour",
+      "price": 40000,
+      "description": "Enjoy a perfect balance of comfort and adventure <br>  with our Standard Family Tour, offering 3-star hotels, <br> guided group excursions, and fun family-friendly <br> activities."
+    },
+    {
+      "id": 3,
+      "name": "Budget Family Tour",
+      "price": 30000,
+      "description": "Our Budget Family Tour offers affordable yet <br> enjoyable travel with basic accommodations and <br> self-guided sightseeing options, perfect for families <br> seeking adventure on a budget."
+    }
+  
+  ]
+  

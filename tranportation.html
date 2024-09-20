@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trans.css">
+    
+     <!-- bootstrap CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+     <!-- fontawesome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- GOOGLE FONT LINK -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- HEADER OF WEBSITE -->
+   <header>
+    <div class="top-nav">
+        <div class="contact">
+            <p>0342-7463729</p>
+        </div>
+        <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();"
+    onmouseout="this.start();" width="60%">
+    Welcome to Travel Marts – Your gateway to unforgettable family adventures! &nbsp;&nbsp;&nbsp;&nbsp; Welcome to Travel Marts – Your gateway to unforgettable family adventures! 
+    &nbsp;&nbsp;&nbsp;&nbsp; Welcome to Travel Marts – Your gateway to unforgettable family adventures!  
+  </marquee>
+        <div class="social-links">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+ </header>
+ <section id="nav">
+    <div class="logo">
+        <img src="Assets/logo-icon.png" alt="logo-icon">
+        <h1  data-aos="fade-right">TravelSmart</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <!-- <a href="#">Trips</a> -->
+        <div class=" d-flex justify-content-center" style="margin-left: 40px; padding-bottom: 20px;" id="main1">
+            <div class="dropdown dropdown-hover">
+              <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init
+                class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-mdb-toggle="dropdown" aria-expanded="false">
+                TRIP CATALOG
+              </button>
+              <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="dropdownMenuButton" style=" background-color: #021959;">
+                <li>
+                    <a class="dropdown-item" href="#">Destination &raquo; </a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                      <li>
+                        <a class="dropdown-item" href="tranportation.html">Transportation</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="accomodation.html">Accomodation</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Sort By Country &raquo; </a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                      <li>
+                        <a class="dropdown-item" href="southamerica.html">South America</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="northamerica.html">North America</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="europe.html">Europe</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="asia.html">Asia</a>
+                      </li>
+                    </ul>
+                  </li>
+                <li>
+                  <a class="dropdown-item" href="#"> Sort By Activity &raquo; </a>
+                  <ul class="dropdown-menu dropdown-submenu ">
+                    <li>
+                      <a class="dropdown-item" href="family-tour.html">Family tour</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="adventure.html">Adventure tour</a>
+                    </li>
+                   
+                    <li>
+                      <a class="dropdown-item" href="luxury.html">Luxury Tour</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="cultural.html">Cultural tour</a>
+                    </li>
+                  </ul>
+                 
+                </li>
+                <li>
+                <a class="dropdown-item" href="book-form.html"> Book Now </a>
+            </li>
+              </ul>
+            </div>
+          </div>
+        <a href="contact.html">Contact Us</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <div class="search">
+        <section class="searchbar">
+            <div class="search-container">
+              <input type="search" id="searchInput" class="search-bar" placeholder=" Search ......." onkeyup="showSuggestions(this.value)">
+              <div id="suggestions"></div>
+              <div class="search-icon" id="searchIcon">
+                <i class="fas fa-search" style="color: white;"></i> 
+              </div>
+            </div>
+           
+          </section> 
+    </div>
+    <div class="hamburger">
+        <i class="fas fa-bars" onclick="clickHam()"></i>
+    </div>
+ </section>
+ <!-- NAV BAR FOR THE MOBILE APPLICATION -->
+ <div class="mob-nav">
+     <a href="#">About</a>
+     <a href="#">Trips</a>
+     <a href="#">Contact Us</a>
+     <a href="#">Reviews</a>
+ </div>
+ <section id="main-body">
+  <div class="body">
+      
+</section>
+    <section id="head">
+        <div class="container-fluid">
+            <h1>Transportation</h1>
+        </section>
+          <section>
+            <div class="section best-deal" style="margin-top: -6rem;">
+              <div class="container">
+                <div class="row">
+                  <div class="">
+                    <div class="section-heading">
+                  
+                      <h2>Discover The History With Us!</h2>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="tabs-content">
+                      <div class="row">
+                        <div class="nav-wrapper ">
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="appartment-tab" data-bs-toggle="tab" data-bs-target="#appartment" type="button" role="tab" aria-controls="appartment" aria-selected="true" style="font-weight: 500;">By Air</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false" style="font-weight: 500;">By Bus</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab" data-bs-target="#penthouse" type="button" role="tab" aria-controls="penthouse" aria-selected="false" style="font-weight: 500;">By Train</button>
+                            </li>
+                          </ul>
+                        </div>              
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="appartment" role="tabpanel" aria-labelledby="appartment-tab">
+                            <div class="row">
+                              <div class="col-lg-">
+                               
+                              </div>
+                              <div class="col-lg-8">
+                                <img src="package-images/air2.jpg" alt="" style="height: 500px; width: 700px; padding-top: 40px;">
+                              </div>
+                              <div class="col-lg-4">
+                                <h4>Book Your Trip Now</h4>
+                                <p>Explore historic monuments worldwide with our convenient air travel service. Effortlessly book your flights online for a seamless journey. From the iconic pyramids of Egypt to the majestic Taj Mahal, discover awe-inspiring sites with ease.<br><br> Our service ensures hassle-free travel, allowing you to focus on unforgettable experiences. Start your adventure today and let us take you to the wonders of the world. With our user-friendly platform, planning your trip is simple and efficient. Embark on a journey of discovery with ease and comfort.</p>
+                                <div class="icon-button">
+                                  <a href="#"><i class="fa fa-calendar"></i> BOOK NOW</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <br><br>
+                          <div class="tab-pane fade" id="villa" role="tabpanel" aria-labelledby="villa-tab">
+                            <div class="row">
+                              <div class="col-lg-">
+                                
+                              </div>
+                              <div class="col-lg-8">
+                                <img src="package-images/bus.jpg" alt="" style="height: 500px; width: 700px; padding-top: 0px;">
+                              </div>
+                              <div class="col-lg-4">
+                                <h4>Book Your Trip Now</h4>
+                                <p>Prepare to board our boat and go on an incredible adventure through time! Imagine soaring over the ocean, surrounded by old civilizations' mysteries. Each stop on our voyage, from Egypt's towering pyramids to Rome's spectacular Colosseum, seems like entering a living history book.<br><br> Our skilled guides will keep you delighted with fascinating stories and humorous facts, making you feel like an adventurer on this adventurous cruise. So, bring your curiosity and join us on a fantastic experience!</p>
+                                <div class="icon-button">
+                                  <a href="#"><i class="fa fa-calendar"></i> BOOK NOW</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <br><br>
+                          <div class="tab-pane fade" id="penthouse" role="tabpanel" aria-labelledby="penthouse-tab">
+                            <div class="row">
+                              <div class="col-lg-">
+                                
+                              </div>
+                              <div class="col-lg-8">
+                                <img src="package-images/train3.jpeg" alt="" style="height: 500px; width: 700px; padding-top: 0px;">
+                              </div>
+                              <div class="col-lg-4">
+                                <h4>Book Your Trip Now</h4>
+                                <p>Embark on an enchanting journey through time as we traverse the land to uncover a treasure trove of historical monuments. From ancient ruins to majestic castles, each stop promises to captivate with tales of bygone eras.<br><br> Wind through picturesque landscapes, immersing yourself in the rich tapestry of our world's heritage. Join us on this thrilling adventure where every mile brings us closer to the wonders of history, leaving a lasting impression that echoes through the ages.</p>
+                                <div class="icon-button">
+                                  <a href="#"><i class="fa fa-calendar"></i> BOOK NOW</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <br><br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="gallery">
+            <div class="heading">
+              <h1>Gallery</h1>
+            </div>
+            <div class="container1">
+        
+              <div class="box" class="about-content" class="col-sm-12 col-lg-6 col-md-6 col-12" data-aos="fade-right">
+        
+                <div class="dream">
+                  <img src="package-images/gallery pic-01.jpg" alt="" style="height: 600px;">
+                  <img src="package-images/property-02.jpg" alt="">
+                  <img src="package-images/property-03.jpg" alt="">
+                  <img src="package-images/vide.jpg" alt="" style="width: 870px; height: 310px;">
+                </div>
+        
+                <div class="dream">
+                  <img src="package-images/property-05.jpg" alt="">
+                  <img src="package-images/property-06.jpg" alt="">
+                  <img src="package-images/noor mehal.jpg" alt="">
+                  <img src="package-images/fe lahore.jpg" alt="" style="height: 300px;">
+                </div>
+        
+                <div class="dream">
+                  <img src="package-images/italy.webp" alt="">
+                  <img src="package-images/vide.jpg" alt="">
+                  <img src="package-images/single-property.jpeg" alt="">
+                  <img src="package-images/gallery pic-12.jpg" alt="" style="height: 640px;">
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr>
+          <!-- WEBSITE FOOTER -->
+       <section id="footer">
+        <div class="footer">
+            <div class="footer-cont">
+                <div class="footer-col1">
+                    <span id="footer-logo">
+                        <img src="Assets/logo-icon.png">
+                        <h1>TravelSmart</h1>
+                    </span>
+                    <p>Explore the world one destination at a time. Unforgettable journeys, crafted with love. Discover new cultures, breathtaking landscape. Travel with us, create memories forever.</p>
+                    <br>
+                    <div class="links">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <h2>BLOG POSTS</h2>
+                    <div class="footer-blog-details">
+                        <div class="footer-blog-img">
+                            <img src="Assets/offer2.png">
+                        </div>
+                        <div class="footer-blog-title">
+                            <h6>Create Your Memories With Us</h6>
+                            <p>Nov 2, 2022</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="footer-blog-details">
+                        <div class="footer-blog-img">
+                            <img src="Assets/offer4.png">
+                        </div>
+                        <div class="footer-blog-title">
+                            <h6>Enjoy your life</h6>
+                            <p>Sep 12, 2024</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="footer-blog-details">
+                        <div class="footer-blog-img">
+                            <img src="Assets/offer6.png">
+                        </div>
+                        <div class="footer-blog-title">
+                            <h6>Travel with us this year</h6>
+                            <p>Oct 25, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col3">
+                    <h2>TAGS</h2>
+                    <div class="tags">
+                        <a href="#">Travel</a>
+                        <a href="#">Tour</a>
+                        <br>
+                        <a href="#">Enjoy</a>
+                        <a href="#">Adventure</a>
+                    </div>
+                </div>
+                <div class="footer-col4">
+                    <h2>CONTACT INFO</h2>
+                    <div class="contact-details">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Aptech, North Karachi</h3>
+                    </div>
+                    <div class="contact-details">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>+92 123 4567 890</h3>
+                    </div>
+                    <div class="contact-details">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h3>travelsmart@gmail.com</h3>
+                    </div>
+                    <div class="contact-details">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <h3>www.travelsmart.com</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+         <div class="footer-end-details">
+            <p>Copyright ©2024 All rights reserved <br>
+            Aptech Students Team Wizard</p>
+        </div>
+            <div class="footer-nav">
+                <a href="#">About</a>
+                <a href="#">Trips</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Reviews</a>
+            </div>
+        </div>
+    </section>
+          <script type="text/javascript" src="script.js"></script>
+          <script>
+           AOS.init();
+         </script>
+</body>
+</html>
